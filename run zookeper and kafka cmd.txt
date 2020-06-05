@@ -1,0 +1,16 @@
+# Run this cmd before run java application
+
+# Start zookeeper, in this case kafka placed in drive C, you can change location.
+# If you change drive or lacation, change log.dirs value in server.properties file.
+# And change dataDir value in zookeeper.properties file.
+# Where location in config folder .
+# Open kafka folder, e.g. C:\kafka_2.12-2.5.0.
+# Press shift + right click then click Open PowerShell window here.
+# Paste below :
+bin\windows\zookeeper-server-start.bat config\zookeeper.properties
+
+# Start kafka
+# In same folder like above
+# Press shift + right click then click Open PowerShell window here
+# Paste below :
+bin\windows\kafka-server-start.bat config\server.properties

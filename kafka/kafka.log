@@ -1,0 +1,102 @@
+2020-06-05 11:21:37,490 INFO  [main] com.spring.kafka.KafkaApplication : Starting KafkaApplication on LAPTOP-402KR1H4 with PID 17720 (D:\Git Alfa Eclipse\kafka\target\classes started by Aris in D:\Git Alfa Eclipse\kafka)
+2020-06-05 11:21:37,496 INFO  [main] com.spring.kafka.KafkaApplication : No active profile set, falling back to default profiles: default
+2020-06-05 11:21:39,290 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 7013 (http)
+2020-06-05 11:21:39,305 INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2020-06-05 11:21:39,306 INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-06-05 11:21:39,440 INFO  [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2020-06-05 11:21:39,440 DEBUG [main] org.springframework.web.context.ContextLoader : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-06-05 11:21:39,440 INFO  [main] org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 1869 ms
+2020-06-05 11:21:39,797 INFO  [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-05 11:21:39,816 DEBUG [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-06-05 11:21:39,906 DEBUG [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2020-06-05 11:21:39,961 DEBUG [main] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-06-05 11:21:39,974 DEBUG [main] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-06-05 11:21:40,230 INFO  [main] org.apache.kafka.clients.consumer.ConsumerConfig : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group_id
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2020-06-05 11:21:40,344 INFO  [main] org.apache.kafka.common.utils.AppInfoParser : Kafka version: 2.5.0
+2020-06-05 11:21:40,347 INFO  [main] org.apache.kafka.common.utils.AppInfoParser : Kafka commitId: 66563e712b0b9f84
+2020-06-05 11:21:40,347 INFO  [main] org.apache.kafka.common.utils.AppInfoParser : Kafka startTimeMs: 1591330900342
+2020-06-05 11:21:40,350 INFO  [main] org.apache.kafka.clients.consumer.KafkaConsumer : [Consumer clientId=consumer-group_id-1, groupId=group_id] Subscribed to topic(s): foo.t
+2020-06-05 11:21:40,353 INFO  [main] org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler : Initializing ExecutorService
+2020-06-05 11:21:40,389 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 7013 (http) with context path ''
+2020-06-05 11:21:40,415 INFO  [main] com.spring.kafka.KafkaApplication : Started KafkaApplication in 3.631 seconds (JVM running for 5.825)
+2020-06-05 11:21:40,948 INFO  [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata : [Consumer clientId=consumer-group_id-1, groupId=group_id] Cluster ID: bq48pKVQSYGxS2IgLaZqug
+2020-06-05 11:21:40,950 INFO  [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.consumer.internals.AbstractCoordinator : [Consumer clientId=consumer-group_id-1, groupId=group_id] Discovered group coordinator LAPTOP-402KR1H4:9092 (id: 2147483647 rack: null)
+2020-06-05 11:21:40,954 INFO  [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.consumer.internals.AbstractCoordinator : [Consumer clientId=consumer-group_id-1, groupId=group_id] (Re-)joining group
+2020-06-05 11:21:40,968 INFO  [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.consumer.internals.AbstractCoordinator : [Consumer clientId=consumer-group_id-1, groupId=group_id] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group
+2020-06-05 11:21:40,968 INFO  [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.consumer.internals.AbstractCoordinator : [Consumer clientId=consumer-group_id-1, groupId=group_id] (Re-)joining group
+2020-06-05 11:21:40,976 INFO  [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : [Consumer clientId=consumer-group_id-1, groupId=group_id] Finished assignment for group at generation 26: {consumer-group_id-1-a48996b5-ab6e-469c-a0ff-d48b26b7aa04=Assignment(partitions=[foo.t-0])}
+2020-06-05 11:21:40,985 INFO  [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.consumer.internals.AbstractCoordinator : [Consumer clientId=consumer-group_id-1, groupId=group_id] Successfully joined group with generation 26
+2020-06-05 11:21:40,991 INFO  [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : [Consumer clientId=consumer-group_id-1, groupId=group_id] Adding newly assigned partitions: foo.t-0
+2020-06-05 11:21:41,004 INFO  [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : [Consumer clientId=consumer-group_id-1, groupId=group_id] Setting offset for partition foo.t-0 to the committed offset FetchPosition{offset=8, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[LAPTOP-402KR1H4:9092 (id: 0 rack: null)], epoch=0}}
+2020-06-05 11:21:41,006 INFO  [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.springframework.kafka.listener.KafkaMessageListenerContainer : group_id: partitions assigned: [foo.t-0]

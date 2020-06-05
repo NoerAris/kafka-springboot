@@ -1,0 +1,39 @@
+server:
+  port: 7013
+  context-path: / 
+security:
+  basic:
+    enabled: false
+management:
+  security:
+    enabled: true 
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    producer:
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializ
+    consumer:
+      group-id: group-id
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+  application:
+    name: Kafka
+# In springboot version 2.3.0 or above use logging.file.name
+# Different with version lower than 2.3.0  use logging.file
+logging:
+  file:
+    name: logs/kafka.log
+  pattern:
+    console: "%d %-5level %logger : %msg%n"
+    file: "%d %-5level [%thread] %logger : %msg%n"
+  level:
+    org:
+      springframework:
+        security: DEBUG
+        web: DEBUG
+app:
+  topic:
+    foo: foo.t
+    obj: obj.c
